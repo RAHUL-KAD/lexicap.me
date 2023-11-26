@@ -21,12 +21,13 @@ import {
 
 import Solutions2 from "../components/Solutions2";
 
-import Music1 from "../components/Music1";
+import PodcastView from "../components/PodcastView";
+
 const Home: NextPage = () => {
   return (
-    <div className="w-full flex-col items-center justify-center py-2">
+    <div className="w-full flex flex-col items-center justify-center py-2">
       <Head>
-        <title>Lexicap | Lex Fridman Podcast Summaries and Transcripts </title>
+        <title>Lexicap | Lex Fridman Podcasts - Summaries and Transcripts </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -55,7 +56,7 @@ const Home: NextPage = () => {
       </svg>
 
       <Header />
-      <main className="flex justify-center items-center max-w-full px-4">
+      <main className="flex justify-center items-center px-4">
         <div className="mt-5 sm:mt-5">
           {/* <Badge text={"Try our GenAI solution for Contact Center"} /> */}
 
@@ -85,7 +86,7 @@ const Home: NextPage = () => {
           <h1 className="font-display mt-5 mx-auto max-w-4xl text-center text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl">
             <span className="relative text-[#333] whitespace-wrap">
               <span className="relative mr-2">
-              Lex Fridman Podcast Summaries and Transcripts{" "}
+              Lex Fridman Podcasts Summaries and Transcripts
               </span>
             </span>
           </h1>
@@ -163,7 +164,7 @@ const Home: NextPage = () => {
           ></video>
         </div> */}
       </main>
-      {/* <Music1 /> */}
+      <PodcastView />
       {/* <Testimonials /> */}
       {/* <Datasets /> */}
       {/* <Features1/> */}
