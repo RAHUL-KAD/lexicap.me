@@ -140,7 +140,7 @@ export default function PodcastView() {
                             </div>
                             )}
                         </div>
-                        <a href={`/podcast/episodes/${episod.url}`}>
+                        <a href={`/episods/${episod.url}`}>
                             <span className="absolute inset-0 z-0"></span>
                             <h3 className="line-clamp-2 sm:line-clamp-1 text-base font-semibold sm:text-xl">
                                 {episod.title}
