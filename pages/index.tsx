@@ -26,7 +26,7 @@ const Home: NextPage = () => {
   return (
     <div className="mx-auto flex max-w-full flex-col items-center justify-center py-2">
       <Head>
-        <title>Rfai | Royalty Free AI Generated Music </title>
+        <title>Lexicap | Lex Fridman Podcast Summaries and Transcripts </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -59,9 +59,9 @@ const Home: NextPage = () => {
         <div className="mt-5 sm:mt-10">
           {/* <Badge text={"Try our GenAI solution for Contact Center"} /> */}
           <h1 className="font-display mx-auto max-w-4xl text-center text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl">
-            <span className="relative text-[#333] sm:whitespace-nowrap">
+            <span className="relative text-[#333] whitespace-wrap">
               <span className="relative mr-2">
-                Royalty Free AI Generated Music{" "}
+              Lex Fridman Podcast Summaries and Transcripts{" "}
               </span>
             </span>
           </h1>
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
           ></video>
         </div> */}
       </main>
-      <Music1 />
+      {/* <Music1 /> */}
       {/* <Testimonials /> */}
       {/* <Datasets /> */}
       {/* <Features1/> */}
