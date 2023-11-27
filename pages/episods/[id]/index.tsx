@@ -24,7 +24,7 @@ export default function Episods() {
   }
 
   // https://emojipedia.org/objects
-  const tabs: string[] = ["📄 Summary", "📑 Chapters", "📚 Transcript"];
+  const tabs: string[] = ["📑 Chapters & Summaries", "📚 Transcript"];
 
   return (
     <div>
@@ -83,22 +83,17 @@ export default function Episods() {
 
                 <div className="content">
                   {activeTabIndex === 0 && (
-                    <div className="mt-10 sm:ml-20">
-                      <p>First</p>
+                    <div className="mt-10 sm:ml-10">
+                      <p>Hello</p>
                     </div>
                   )}
 
                   {activeTabIndex === 1 && (
-                    <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+                    <div className="mt-10 sm:ml-10">
                       <p>hello</p>
                     </div>
                   )}
 
-                  {activeTabIndex === 2 && (
-                    <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
-                      <p>hi</p>
-                    </div>
-                  )}
                 </div>
               </div>
             </div>

@@ -92,15 +92,15 @@ const Home: NextPage = () => {
           </h1>
 
           <div className="mt-5 sm:mt-10 max-w-5xl flex sm:flex-row flex-col items-center justify-center">
-            <p className="mx-auto text-lg leading-7 text-[#333] sm:text-xl">
+            {/* <p className="mx-auto text-lg leading-7 text-[#333] sm:text-xl">
               &#10022; Listen to Summaries
-            </p>
+            </p> */}
             <p className="mx-auto text-lg leading-7 text-[#333] sm:text-xl">
-              &#10022; AI Generated Chapters
+              &#10022; AI Generated Chapters with Summary
             </p>
-            <p className="mx-auto text-lg leading-7 text-[#333] sm:text-xl">
+            {/* <p className="mx-auto text-lg leading-7 text-[#333] sm:text-xl">
               &#10022; Keywords
-            </p>
+            </p> */}
             {/* <p className="mx-auto mt-10 text-xl leading-7 text-[#333]">&#10040; No Sign in required</p> */}
           </div>
           {/* <p className="mx-auto mt-5 max-w-xl text-center md:text-left text-xl leading-7 text-[#333] sm:mt-5 whitespace-wrap">
