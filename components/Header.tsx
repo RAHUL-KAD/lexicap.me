@@ -95,9 +95,9 @@ export default function Header() {
               className="px-2 lg:px-6 py-2 md:px-3 text-lg font-medium text-black hover:text-accent-400"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://rahul-kadam.notion.site/Lexicap-Changlog-3116c1d603714023adf785b2f26fe4c0?pvs=4"
+              // href="https://rahul-kadam.notion.site/Lexicap-Changlog-3116c1d603714023adf785b2f26fe4c0?pvs=4"
             >
-              Changlog
+              {/* Changlog */}
             </a>
 
 

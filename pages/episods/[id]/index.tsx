@@ -5,6 +5,9 @@ import Header from "../../../components/Header";
 import React, { useState, useEffect, useRef } from "react";
 import ReactPlayer from "react-player/youtube";
 import TabsTest from "../../../components/TabsTest"
+import chapters from '../../../public/402Chapters.json'
+import Transcripts from "../../../public/402Transcripts.json"
+
 
 export default function Episods() {
 
@@ -25,6 +28,11 @@ export default function Episods() {
 
   // https://emojipedia.org/objects
   const tabs: string[] = ["📑 Chapters & Summaries", "📚 Transcript"];
+
+  const parseTimeString = (timeString: string): number => {
+    const [hours, minutes, seconds] = timeString.split(':').map(Number);
+    return hours * 3600 + minutes * 60 + seconds;
+  };
 
   return (
     <div>
@@ -47,6 +55,7 @@ export default function Episods() {
               url={episode.youtube_url}
               className="react-player"
               controls
+              playing
               width="100%" // Set the width to 100% for responsiveness
             />
             <div className="mt-5 text-color-secondary flex items-center gap-x-2">
@@ -84,13 +93,45 @@ export default function Episods() {
                 <div className="content">
                   {activeTabIndex === 0 && (
                     <div className="mt-10 sm:ml-10">
-                      <p>Hello</p>
+                      {chapters.map((chapter, index) => (
+                        <div key={index}>
+                          <h1 className="text-lg font-semibold sm:text-xl lg:text-xl">{chapter.chapter_title}</h1>
+                          <div className="text-color-secondary flex items-center gap-x-2">
+                            <button onClick={() => playerRef.current?.seekTo(parseTimeString(chapter.start_time))}>
+                              {chapter.start_time}
+                            </button>
+                            <button onClick={() => playerRef.current?.seekTo(parseTimeString(chapter.end_time))}>
+                              {chapter.end_time}
+                            </button>
+                          </div>
+                          <a className="mt-2 flex items-start gap-x-2 mb-10">
+                            {chapter.chapter_summary}
+                          </a>
+                          
+                        </div>
+                      ))}
                     </div>
                   )}
 
                   {activeTabIndex === 1 && (
                     <div className="mt-10 sm:ml-10">
-                      <p>hello</p>
+                      {Transcripts.map((transcript, index) => (
+                        <div key={index}>
+                          <div className="text-color-secondary text-base flex items-center gap-x-2">
+                          <p className="italic">{transcript.speaker}</p>
+                            <button onClick={() => playerRef.current?.seekTo(parseTimeString(transcript.start_time))}>
+                              {transcript.start_time}
+                            </button>
+                            <button onClick={() => playerRef.current?.seekTo(parseTimeString(transcript.end_time))}>
+                              {transcript.end_time}
+                            </button>
+                          </div>
+                          <a className="mt-2 text-lg font-semibold flex items-start gap-x-2 mb-5">
+                            {transcript.text}
+                          </a>
+
+                        </div>
+                      ))}
                     </div>
                   )}
 
