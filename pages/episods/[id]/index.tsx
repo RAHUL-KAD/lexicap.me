@@ -173,7 +173,7 @@ export default function Episods() {
                 {tabs.map((tab, index) => (
                   <button
                     key={index}
-                    className={`tab ml-2 mt-2 rounded-xl bg-blue-200 px-5 font-semibold text-blue-500 hover:bg-blue-300 sm:ml-10 ${
+                    className={`tab ml-2 mt-2 rounded-xl text-lg bg-blue-200 px-5 font-semibold text-blue-500 hover:bg-blue-300 sm:ml-10 ${
                       activeTabIndex === index
                         ? "tab-active"
                         : "bg-gray-300 font-medium text-gray-600"
