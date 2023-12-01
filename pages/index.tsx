@@ -173,7 +173,7 @@ const Home: NextPage = () => {
       {/* <Solutions /> */}
       {/* <TabsTest /> */}
       {/* <Features  /> */}
-      {/* <CallToAction /> */}
+      <CallToAction />
       {/* <Footer /> */}
     </div>
   );

@@ -9,6 +9,7 @@ import chapters402 from "../../../public/402Chapters.json";
 import Transcripts402 from "../../../public/402Transcripts.json";
 import chapters401 from "../../../public/401Chapters.json";
 import Transcripts401 from "../../../public/401Transcripts.json";
+import Footer from "../../../components/Footer";
 
 export default function Episods() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
@@ -263,6 +264,8 @@ export default function Episods() {
           </div>
         </div>
       </div>
+
+      {/* <Footer /> */}
     </div>
   );
 }

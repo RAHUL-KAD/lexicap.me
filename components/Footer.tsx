@@ -14,7 +14,7 @@ export default function Footer() {
               width={8}
               height={8}
           />
-          Voxlab    
+          Lexicap    
       </a>
       {/* <p className="my-6 text-gray-500 dark:text-gray-400">Generate high quality datasets for Computer Vision, ASR, Virtual assistants, Chatbots, and content creation.</p> */}
       <ul className="flex flex-wrap justify-center items-center mt-5 mb-6 text-[#333] dark:text-white">
