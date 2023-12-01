@@ -10,19 +10,20 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.svg" />
-          <meta name="description" content="Enhance AI with Synthetic data" />
+          <meta name="description" content="Lex Fridman Podcasts - Summaries and Transcripts" />
           <meta property="og:site_name" content="voxlab.co" />
           <meta
             property="og:description"
-            content="Free AI Powered Image Processing Tools."
+            content="Lex Fridman Podcasts - Summaries and Transcripts"
           />
-          <meta property="og:title" content="Enhance AI with Synthetic data" />
+          <meta property="og:title" content="Lex Fridman Podcasts - Summaries and Transcripts" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Enhance AI with Synthetic data" />
+          <meta name="twitter:title" content="Lex Fridman Podcasts - Summaries and Transcripts" />
           <meta
             name="twitter:description"
-            content="Enhance AI with Synthetic data"
+            content="Lex Fridman Podcasts - Summaries and Transcripts"
           />
+          <script async src="https://tally.so/widgets/embed.js"></script>
           {/* Add Image here for a preview */}
           <meta
             property="og:image"
